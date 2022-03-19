@@ -1,0 +1,64 @@
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.nome {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.header-menu a {
+  text-decoration: none;
+  color: #141414;
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  padding: 10px 20px;
+  display: block;
+  position: relative;
+}
+/* TRÊS SUBLINHADOS DO MENU HEADER */
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #141414;
+  margin-top: 4px;
+  transition: 0.3s;
+}
+.header-menu a:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .header a {
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+  .header a:hover {
+    background: #cccccc;
+    transition: 2s;
+  }
+  .header-menu a:after {
+    background: #f5f5f5;
+    margin-top: 0px;
+  }
+  .header-menu a:hover:after {
+    background: #cccccc;
+    transition: 2s;
+  }
+}

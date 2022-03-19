@@ -1,0 +1,110 @@
+.introdução {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 200px;
+}
+
+.introdução h1 {
+  font-size: 4.5rem;
+  position: relative;
+}
+
+.html::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 50px;
+  background: url("../Img/Retangulo1.svg") no-repeat center;
+  position: absolute;
+  top: 15px;
+  left: -90px;
+}
+.python::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 50px;
+  background: url("../Img/Retangulo2.svg") no-repeat center;
+  position: absolute;
+  top: 15px;
+  left: -90px;
+}
+.java::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 50px;
+  background: url("../Img/Retangulo3.svg") no-repeat center;
+  position: absolute;
+  top: 15px;
+  left: -90px;
+}
+.mysql::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 50px;
+  background: url("../Img/Retangulo4.svg") no-repeat center;
+  position: absolute;
+  top: 15px;
+  left: -90px;
+}
+.introdução p {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 1200px) {
+  .introdução {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .introdução h1 {
+    font-size: 3rem;
+    gap: 20px;
+  }
+  .introdução p {
+    font-size: 1rem;
+  }
+  .html::before {
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: -20px;
+  }
+  .python::before {
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: -20px;
+  }
+  .java::before {
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: -20px;
+  }
+  .mysql::before {
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: -20px;
+  }
+}
+@media (max-width: 600px) {
+  .introdução {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 50px;
+  }
+  .introdução img {
+    width: 250px;
+    height: 250px;
+  }
+}

@@ -1,0 +1,58 @@
+.footer {
+  background: #000000;
+}
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px 100px;
+  align-items: center;
+}
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #ffffff;
+  position: relative;
+}
+.footer-contato li::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 50px;
+  background: url("../Img/Retangulo1p.svg") no-repeat center;
+  position: absolute;
+  top: -5px;
+  left: -90px;
+}
+.footer-contato li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  position: relative;
+}
+.footer-contato li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-copy {
+  font-size: 0.875rem;
+  color: #525252;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+  .footer-contato li::before {
+    /* position: initial; */
+    top: -11px;
+    left: -90px;
+  }
+}
